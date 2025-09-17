@@ -10,7 +10,7 @@ def write_file(filename,newlines):
 		for line in newlines:
 			f.write(line)
 
-def convert(filename,lines):
+def convert(lines):
 	person=''
 	newlines=[]
 	for line in lines:
@@ -20,11 +20,12 @@ def convert(filename,lines):
 			continue
 		else:
 			newlines.append(person+': ' +  line + '\n')
-	write_file(filename,newlines)
+	return newlines
 
 def main():
 	lines = read_file('input.txt')
-	convert('output.txt',lines)
+	lines = convert(lines)
+	write_file('output.txt',lines)
 	#print(lines)	
 
 main()
