@@ -26,6 +26,5 @@ def main():
 	lines = read_file('input.txt')
 	lines = convert(lines)
 	write_file('output.txt',lines)
-	#print(lines)	
 
 main()
