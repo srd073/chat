@@ -43,6 +43,7 @@ def convert(lines):
 	print('Viki說了',viki_word_count,'個字, 傳了',viki_sticker_count,'個貼圖, ',viki_image_count,'個圖片')
     # 清單取值 s[0:2] -> s[0],s[1] 含起始值,不含結尾值
 	#         s[:3]  -> s[0],s[1],s[2]
+	#         s[2:4] -> s[2],s[3]
 	#         s[2:]  -> s[2],s[3],s[4]...後面的值全部取
 
 	return newlines
